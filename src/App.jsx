@@ -2,6 +2,7 @@ import { Header } from "./Components/Header/Header"
 import { Carrosel } from "./Components/Carrousel/Carrosel"
 import { Route, Routes } from "react-router"
 import { Home } from "./Components/Home/Home"
+import { Content } from "./Pages/Content"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/visite" element={<Home/>}/>
           <Route path="/reserva" element={<Home/>}/>
         </Routes>
+        <Content/>
         
      </>
   )
