@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+*{
+  box-sizing: border-box;
+}
+@theme {
+  --color-bg: #F3EBDE;
+  --color-surface: #FFFDF9;
+  --color-surface-2: #FBF4E9;
+
+  --color-ink: #2A2019;
+  --color-muted: #8C7B6B;
+  --color-line: #E7DBC8;
+
+  --color-accent: #B4632B;
+  --color-accent-2: #4E7A5A;
+  --color-accent-soft: #F1E1CB;
+  --color-cream: #F3EBDE;
+  --color-accent-hover: #9C531F;
+
+  --font-display: "Instrument Serif", serif;
+  --font-body: "Geist", system-ui, sans-serif;
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+
+  .background-home{
+    background: url(../public/imgs/inteior-capa.png);
+    height: 100vh;
+  }
+  .box-shadow{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.527), rgba(9, 10, 9, 0.185));
+}
+}
