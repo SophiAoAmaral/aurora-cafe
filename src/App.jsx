@@ -1,8 +1,10 @@
 import { Header } from "./Components/Header/Header"
 import { Carrosel } from "./Components/Carrousel/Carrosel"
-import { Route, Routes } from "react-router"
+import { Route, Routes, Link } from "react-router"
 import { Home } from "./Components/Home/Home"
 import { Content } from "./Pages/Content"
+import { Sobre } from "./Pages/Sobre/Sobre"
+import { Cardapio } from "./Pages/Cardapio/Cardapio"
 
 
 function App() {
@@ -10,16 +12,9 @@ function App() {
   return (
     <>
       <Header/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/sobre" element={<Home/>}/>
-          <Route path="/cardapio" element={<Home/>}/>
-          <Route path="/ambiente" element={<Home/>}/>
-          <Route path="/visite" element={<Home/>}/>
-          <Route path="/reserva" element={<Home/>}/>
-        </Routes>
-        <Content/>
-        
+      <Content/>
+  
+
      </>
   )
 }

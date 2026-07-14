@@ -7,12 +7,12 @@ export const Home = () => {
     <section className='background-home'>
     <div className='box-shadow'>
         <section className='container'>
-            <section className='pt- md:pt-30 text-center md:text-start'>
+            <section className='pt-30 text-center md:text-start'>
                 <p className='text-xs md:text-md border border-muted uppercase tracking-widest rounded-2xl inline-block p-2 text-cream md:mt-20'>
                     Torrefação artesanal · desde 2016
                 </p>
                 <div className='md:my-7 md:w-190 flex flex-col gap-7 md:text-start'>
-                    <h1 className='text-7xl md:text-8xl text-white font-display mt-5'>Onde o café encontra <span className="italic text-cream">calma da manhã.</span></h1>
+                    <h1 className='text-7xl md:text-8xl text-white font-display mt-5'>Onde o café encontra <span className="italic text-cream">a calma da manhã.</span></h1>
                     <p className='text-surface-2  md:font-extralight md:text-lg mb-6' >Grãos selecionados, torra própria e receitas que mudam com as estações. Um refúgio no centro da cidade para desacelerar e ficar.</p>
                 </div>
                 <ul className='flex gap-10 items-center cursor-pointer justify-center md:justify-start'>

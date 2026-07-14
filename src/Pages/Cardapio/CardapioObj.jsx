@@ -1,0 +1,15 @@
+export const cardapio =[
+    {id:1 , nome:'Espresso', descricao:'Dose curta e encorpada, crema espessa.', valor:'R$ 6', tipo:'cafe'},
+    {id:2 , nome:'Cappuccino', descricao:'Espresso, leite vaporizado e cacau.', valor:'R$ 11', tipo:'cafe'},
+    {id:3 , nome:'Flat White', descricao:'Microespuma sedosa sobre dose dupla.', valor:'R$ 13', tipo:'cafe'},
+    {id:4 , nome:'Coado da casa', descricao:'Método V60 com grão da semana.', valor:'R$ 9', tipo:'cafe'},
+    {id:5 , nome:'Cold Brew', descricao:'18h de infusão a frio, doçura natural.', valor:'R$ 14', tipo:'cafe'},
+    {id:6 , nome:'Bolo de cenoura', descricao:'Cobertura de brigadeiro meio amargo.', valor:'R$ 16', tipo:'doce'},
+    {id:7 , nome:'Cheesecake', descricao:'Calda de frutas vermelhas da estação.', valor:'R$ 16', tipo:'doce'},
+    {id:8 , nome:'Croissant', descricao:'Folhado amanteigado, assado na hora.', valor:'R$ 8', tipo:'doce'},
+    {id:9 , nome:'Pão de queijo', descricao:'Porção com 4, queijo canastra.', valor:'R$ 7', tipo:'salgado'},
+    {id:10 , nome:'Sanduíche caprese', descricao:'Focaccia, muçarela de búfala e pesto.', valor:'R$ 22', tipo:'salgado'},
+    {id:11 , nome:'Quiche do dia', descricao:'Massa amanteigada com recheio sazonal.', valor:'R$ 18', tipo:'salgado'},
+    {id:12 , nome:'Cold Brew', descricao:'18h de infusão a frio, doçura natural.', valor:'R$ 14', tipo:'gelado'},
+    {id:13 , nome:'Affogato', descricao:'Espresso quente sobre sorvete de baunilha.', valor:'R$ 16', tipo:'gelado'},
+]
