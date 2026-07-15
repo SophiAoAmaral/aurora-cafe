@@ -6,8 +6,8 @@ import balcao from '../../../public/imgs/balcao.png'
 export const Ambiente = () => {
   return (
     <section className='bg-bg'>
-        <section className='container  h-auto text-center md:text-start'>
-            <span className='uppercase text-accent tracking-widest font-bold text-sm md:mt-20 inline-block pt-15 mb:pt-0'>O Ambiente</span>
+        <section className='container  h-auto text-center md:text-start pb-5 md:pb-20'>
+            <span className='uppercase text-accent tracking-widest font-bold text-sm md:mt-20 inline-block pt-15 md:pt-0'>O Ambiente</span>
                 <div>
                     <div className='md:flex justify-between mb-10 mt-4'>
                         <h1 className='text-4xl md:text-5xl font-display mb-4 md:mb-0'>Madeira, plantas e luz de fim de tarde</h1>

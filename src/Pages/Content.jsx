@@ -3,6 +3,7 @@ import { Sobre } from './Sobre/Sobre'
 import { Cardapio } from './Cardapio/Cardapio'
 import { Home } from '../Components/Home/Home'
 import { Ambiente } from './Ambiente/Ambiente'
+import { Aguardando } from './Aguardando/Aguardando'
 
 export const Content = () => {
   return (
@@ -11,6 +12,7 @@ export const Content = () => {
     <Sobre/>
     <Cardapio/>
     <Ambiente/>
+    <Aguardando/>
     </>
   )
 }
