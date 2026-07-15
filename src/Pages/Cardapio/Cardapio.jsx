@@ -5,9 +5,6 @@ import { useState } from 'react'
 export const Cardapio = () => {
     console.log(cardapio)
 
-    function handleTodos(){
-
-    }
     const [filtro, setFiltro] = useState('todos');
     const itensFiltrados = filtro === 'todos' ? cardapio : cardapio.filter(item => item.tipo === filtro);
 
