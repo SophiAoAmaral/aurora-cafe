@@ -4,7 +4,7 @@ import fachada from '../../../public/imgs/fachada.png'
 export const Aguardando = () => {
   return (
     <section className='bg-bgmarrom'>
-        <section className='container p-6 pb-20 md:pb-30'>
+        <section className='container md:p-6 pb-20 md:pb-30'>
             <div className='grid md:grid-cols-2 gap-5 md:gap-0'>
                 <div className='flex flex-col gap-2 items-center md:items-start'>
                     <span className='uppercase text-accent tracking-widest text-sm font-bold pt-10 md:pt-20'>Visite a aurora</span>
@@ -38,7 +38,7 @@ export const Aguardando = () => {
                         </div>
                 </div>
 
-                <img src={fachada} alt="fachada" className='rounded-3xl' />
+                <img src={fachada} alt="fachada" className='md:rounded-3xl' />
             </div>
         </section>
     </section>
