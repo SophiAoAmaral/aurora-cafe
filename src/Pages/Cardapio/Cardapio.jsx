@@ -32,7 +32,7 @@ export const Cardapio = () => {
               <div key={item.id}  className=' md:ml-10  relative flex flex-col md:justify-center'>
                   <h3 className='text-xl'>{item.nome}</h3>
                   <p className='text-xs text-muted'>{item.descricao}</p>
-                  <span className='absolute top-1  left-81 md:left-60 text-md'>{item.valor}</span>
+                  <span className='absolute top-1  left-70 md:left-60 text-md'>{item.valor}</span>
               </div>
             ))}
           </div>
