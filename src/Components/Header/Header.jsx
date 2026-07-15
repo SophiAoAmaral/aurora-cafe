@@ -29,16 +29,16 @@ export const Header = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <section className='container '>
         <nav className='flex flex-row justify-between items-center pt-10 pb-2 relative '>
-           <Link to='/' className='font-display text-white text-4xl inline-block'>Café Aurora</Link>
+           <li className='font-display text-white text-4xl inline-block'>Café Aurora</li>
     
         <ul className='hidden md:flex gap-4  text-white items-center cursor-pointer text-sm  **:font-semibold **:text-md'>
-            <Link to='/sobre'>Sobre</Link>
-            <Link to='/cardapio'>Cardápio</Link>
-            <Link to='/ambiente'>Ambiente</Link>
-            <Link to='/visite'>Visite</Link>
-            <Link to='/reserva' className='bg-accent px-5 py-2 rounded-2xl hover:bg-accent-hover transition'>
+            <li>Sobre</li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li>Ambiente</li>
+            <li>Visite</li>
+            <li className='bg-accent px-5 py-2 rounded-2xl hover:bg-accent-hover transition'>
                 Reservar mesa
-            </Link>
+            </li>
         </ul>
     
         <button
@@ -52,13 +52,13 @@ export const Header = () => {
     
         {menuAberto && (
             <ul className='md:hidden text-center md:text-start absolute top-16 right-0 bg-surface text-ink rounded-xl shadow-lg p-6 flex flex-col gap-4 min-w-48'>
-                <Link to='/sobre'>Sobre</Link>
-                <Link to='/cardapio'>Cardápio</Link>
-                <Link to='/ambiente'>Ambiente</Link>
-                <Link to='/visite'>Visite</Link>
-                <Link to='/reserva' className='bg-accent text-white px-4 py-2 rounded-xl text-center'>
+                <li>Sobre</li>
+                <li>Cardápio</li>
+                <li>Ambiente</li>
+                <li >Visite</li>
+                <li className='bg-accent text-white px-4 py-2 rounded-xl text-center'>
                     Reservar mesa
-                </Link>
+                </li>
             </ul>
          )}
     </nav>
