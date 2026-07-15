@@ -11,8 +11,8 @@ export const Cardapio = () => {
 
   return (
     <section className='bg-surface' id='cardapio'>
-      <section className="container h-[90vh]">
-        <div className='mt-20 flex flex-col md:items-center mb-20 '>
+      <section className="container">
+        <div className='mt-20 flex flex-col md:items-center md:mb-20 '>
           <div className='flex flex-col items-center justify-center gap-3'>
             <span className='uppercase text-accent font-bold text-sm tracking-widest'>O cardápio</span>
             <h2 className='font-display md:text-6xl text-4xl text-center md:text-start'>Feito na hora, servido com calma</h2>
@@ -27,7 +27,7 @@ export const Cardapio = () => {
               <button onClick={() => setFiltro("gelado")} className={`py-2 px-4 rounded-2xl text-sm cursor-pointer hover:bg-accent hover:text-cream transition ${filtro === 'gelado' ? 'bg-accent text-cream hover:border-0 ':'border border-muted text-black'}`}>Gelados</button>
             </div>
           </div>
-          <div className='grid md:grid-cols-2 gap-3 md:gap-10 mt-10 md:w-200' >
+          <div className='grid md:grid-cols-2 gap-3 md:gap-10 mt-10 md:w-200 mb-10' >
             {itensFiltrados.map((item) => (
               <div key={item.id}  className=' md:ml-10  relative flex flex-col md:justify-center'>
                   <h3 className='text-xl'>{item.nome}</h3>

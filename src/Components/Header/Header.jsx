@@ -24,7 +24,10 @@ export const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-  }, [])
+  }, []);
+
+
+
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <section className='container '>
@@ -33,7 +36,7 @@ export const Header = () => {
     
         <ul className='hidden md:flex gap-4  text-white items-center cursor-pointer text-sm  **:font-semibold **:text-md'>
             <li>Sobre</li>
-            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#cardapio" className='scroll-auto'>Cardápio</a></li>
             <li>Ambiente</li>
             <li>Visite</li>
             <li className='bg-accent px-5 py-2 rounded-2xl hover:bg-accent-hover transition'>
@@ -53,9 +56,9 @@ export const Header = () => {
         {menuAberto && (
             <ul className='md:hidden text-center md:text-start absolute top-16 right-0 bg-surface text-ink rounded-xl shadow-lg p-6 flex flex-col gap-4 min-w-48'>
                 <li>Sobre</li>
-                <li>Cardápio</li>
+                <li><a href="#cardapio">Cardápio</a></li>
                 <li>Ambiente</li>
-                <li >Visite</li>
+                <li>Visite</li>
                 <li className='bg-accent text-white px-4 py-2 rounded-xl text-center'>
                     Reservar mesa
                 </li>
