@@ -4,11 +4,11 @@ import fachada from '../../../public/imgs/fachada.png'
 export const Aguardando = () => {
   return (
     <section className='bg-bgmarrom'>
-        <section className='container md:p-6 pb-20 md:pb-30'>
+        <section className='container md:p-6 pb-20'>
             <div className='grid md:grid-cols-2 gap-5 md:gap-0'>
                 <div className='flex flex-col gap-2 items-center md:items-start'>
                     <span className='uppercase text-accent tracking-widest text-sm font-bold pt-10 md:pt-20'>Visite a aurora</span>
-                    <h2 className='font-display text-4xl md:text-5xl text-white text-center'>Estamos te esperando</h2>
+                    <h2 className='font-display text-4xl md:text-6xl text-white text-center'>Estamos te esperando</h2>
                     <div className='relative'>
                         <p className='text-cream mt-3'>Rua das Laranjeiras, 128</p>
                         <span className='absolute top-3 -left-8'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#B4632B"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></span>
@@ -38,7 +38,7 @@ export const Aguardando = () => {
                         </div>
                 </div>
 
-                <img src={fachada} alt="fachada" className='md:rounded-3xl' />
+                <img src={fachada} alt="fachada" className='md:rounded-3xl w-180' />
             </div>
         </section>
     </section>
