@@ -5,7 +5,7 @@ import balcao from '../../../public/imgs/balcao.png'
 
 export const Ambiente = () => {
   return (
-    <section className='bg-bg'>
+    <section className='bg-bg' id='ambiente'>
         <section className='container  h-auto text-center md:text-start pb-5 md:pb-20'>
             <span className='uppercase text-accent tracking-widest font-bold text-sm md:mt-20 inline-block pt-15 md:pt-0'>O Ambiente</span>
                 <div>

@@ -27,7 +27,7 @@ export const Sobre = () => {
     };
   }, []);
   return (
-    <section className='bg-bg'>
+    <section className='bg-bg' id='sobre'>
         <section className={desktop ? 'container' : ''}>
             <div className='grid md:grid-cols-2 mt-15 md:pt-40 items-center gap-10 p-4 pb-20'>
                 <div className='md:w-150 flex flex-col gap-5 md:gap-7 text-center md:text-start'>

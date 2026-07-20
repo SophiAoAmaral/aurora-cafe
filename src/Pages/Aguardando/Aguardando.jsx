@@ -3,7 +3,7 @@ import fachada from '../../../public/imgs/fachada.png'
 
 export const Aguardando = () => {
   return (
-    <section className='bg-bgmarrom'>
+    <section className='bg-bgmarrom' id='visite'>
         <section className='container md:p-6 pb-20'>
             <div className='grid md:grid-cols-2 gap-5 md:gap-0'>
                 <div className='flex flex-col gap-2 items-center md:items-start'>

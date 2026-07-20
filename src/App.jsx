@@ -1,22 +1,27 @@
-import { Header } from "./Components/Header/Header"
-import { Carrosel } from "./Components/Carrousel/Carrosel"
-import { Route, Routes, Link } from "react-router"
-import { Home } from "./Components/Home/Home"
-import { Content } from "./Pages/Content"
-import { Sobre } from "./Pages/Sobre/Sobre"
-import { Cardapio } from "./Pages/Cardapio/Cardapio"
-
+import { Header } from "./Components/Header/Header";
+import { Content } from "./Pages/Content";
+import { Route, Routes } from "react-router";
+import { Reservar } from "./Pages/Reservar/Reservar";
 
 function App() {
-
   return (
     <>
-      <Header/>
-      <Content/>
-  
 
-     </>
-  )
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Header />
+            <Content />
+          </>
+        }
+      />
+
+      <Route path="/reservar" element={<Reservar />} />
+    </Routes>
+    </>
+  );
 }
 
-export default App
+export default App;

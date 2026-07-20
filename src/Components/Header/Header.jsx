@@ -6,6 +6,7 @@ import { Carrosel } from '../Carrousel/Carrosel';
 import { Link } from 'react-router';
 
 export const Header = () => {
+  const links = ['sobre', 'cardapio', 'ambiente', 'visite']
       const [menuAberto, setMenuAberto] = useState(false);
 
        const [scrolled, setScrolled] = useState(false)
@@ -32,16 +33,17 @@ export const Header = () => {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <section className='container '>
         <nav className='flex flex-row justify-between items-center pt-10 pb-2 relative '>
-           <li className='font-display text-white text-4xl inline-block'>Café Aurora</li>
+           <Link to='/' className='font-display text-white text-4xl inline-block'>Café Aurora</Link>
     
         <ul className='hidden md:flex gap-4  text-white items-center cursor-pointer text-sm  **:font-semibold **:text-md'>
-            <li>Sobre</li>
-            <li><a href="#cardapio" className='scroll-auto'>Cardápio</a></li>
-            <li>Ambiente</li>
-            <li>Visite</li>
-            <li className='bg-accent px-5 py-2 rounded-2xl hover:bg-accent-hover transition'>
+          {
+            links.map((link)=>(
+              <li> <a onClick={() => document.getElementById(link)?.scrollIntoView({ behavior: 'smooth' })} className='capitalize'> {link} </a> </li>
+            ))
+          }
+            <Link to='/reservar' className='bg-accent px-5 py-2 rounded-2xl hover:bg-accent-hover transition'>
                 Reservar mesa
-            </li>
+            </Link>
         </ul>
     
         <button
@@ -55,13 +57,14 @@ export const Header = () => {
     
         {menuAberto && (
             <ul className='md:hidden text-center md:text-start absolute top-16 right-0 bg-surface text-ink rounded-xl shadow-lg p-6 flex flex-col gap-4 min-w-48'>
-                <li>Sobre</li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li>Ambiente</li>
-                <li>Visite</li>
-                <li className='bg-accent text-white px-4 py-2 rounded-xl text-center'>
+                          {
+            links.map((link)=>(
+              <li> <a onClick={() => document.getElementById(link)?.scrollIntoView({ behavior: 'smooth' })} className='capitalize'> {link} </a> </li>
+            ))
+          }
+                <Link to='/reservar' className='bg-accent text-white px-4 py-2 rounded-xl text-center'>
                     Reservar mesa
-                </li>
+                </Link>
             </ul>
          )}
     </nav>

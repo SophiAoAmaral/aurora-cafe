@@ -16,8 +16,8 @@ export const Home = () => {
                     <p className='text-surface-2  md:font-extralight md:text-lg mb-6' >Grãos selecionados, torra própria e receitas que mudam com as estações. Um refúgio no centro da cidade para desacelerar e ficar.</p>
                 </div>
                 <ul className='flex gap-10 items-center cursor-pointer justify-center md:justify-start'>
-                    <li className='bg-accent py-4 px-4 md:py-4  md:px-8 rounded-2xl text-white hover:bg-accent-hover transition'>Ver cardápio</li>
-                    <li className='text-white py-4 px-4 md:py-4  md:px-8 border border-cream backdrop-blur-2xl rounded-2xl hover:bg-white hover:text-black transition'>Como chegar</li>
+                    <li className='bg-accent py-4 px-4 md:py-4  md:px-8 rounded-2xl text-white hover:bg-accent-hover transition'><a href="#cardapio">Ver cardápio</a></li>
+                    <li className='text-white py-4 px-4 md:py-4  md:px-8 border border-cream backdrop-blur-2xl rounded-2xl hover:bg-white hover:text-black transition'><a href="#visite">Como chegar</a></li>
                 </ul>
             </section>
         </section>
