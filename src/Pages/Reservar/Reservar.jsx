@@ -110,7 +110,7 @@ export const Reservar = () => {
                 <label className='flex flex-col items-start text-muted text-sm'>
                     Observação(opcional)
                     
-                    <input type="text" value={ob} onChange={(e) => setOb(e.target.value)} className='border rounded-2xl py-2 px-4 w-85 md:w-180 bg-white outline-accent' required />
+                    <input type="text" value={ob} onChange={(e) => setOb(e.target.value)} className='border rounded-2xl py-2 px-4 w-85 md:w-180 bg-white outline-accent'  />
                     
                 </label>
             </div>
