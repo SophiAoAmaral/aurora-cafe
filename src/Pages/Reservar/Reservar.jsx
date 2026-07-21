@@ -30,7 +30,7 @@ export const Reservar = () => {
   return (
     <section className="background-home md:h-[100vh] ">
         
-      <div className="md:pt-20 flex justify-center items-center" >
+      <div className="md:pt-20 flex justify-center items-center " >
         <div className="bg-cream md:h-190 w-200 md:rounded-2xl">
             <Link to='/' className='font-semibold inline-block text-2xl text-accent mx-4 my-2'> 🠔 Voltar</Link>
           <span className="uppercase text-sm font-bold text-accent  pt-6 text-center  block">
@@ -116,7 +116,7 @@ export const Reservar = () => {
             </div>
 
                 <button className='bg-accent py-2 px-4 text-white self-center mt-5 rounded-2xl cursor-pointer'>Finalizar reserva</button>
-                <span className='text-xs text-muted block text-center mt-1 pb-3 md:pb-0'>Ao reservar você concorda em receber a confirmação por WhatsApp.</span>
+                <span className='text-xs text-muted block text-center mt-1 pb-3 md:pb-0 '>Ao reservar você concorda em receber a confirmação por WhatsApp.</span>
 
     
           </form>
